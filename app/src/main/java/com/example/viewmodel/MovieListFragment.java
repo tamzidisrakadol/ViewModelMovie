@@ -74,6 +74,6 @@ public class MovieListFragment extends Fragment implements ItemClickListner {
     public void onItemClick(int position) {
        // Toast.makeText(getContext(), "pos "+position, Toast.LENGTH_SHORT).show();
         shareViewModel.setMovie(position);
-        navController.navigate(R.id.action_movieListFragment_to_detailsfragment);
+        navController.navigate(R.id.action_movieListFragment_to_detailsfragment2);
     }
 }

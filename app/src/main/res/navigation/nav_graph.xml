@@ -8,15 +8,19 @@
     <fragment
         android:id="@+id/movieListFragment"
         android:name="com.example.viewmodel.MovieListFragment"
-        android:label="fragment_movie_list"
+        android:label="Movie Series"
         tools:layout="@layout/fragment_movie_list" >
         <action
-            android:id="@+id/action_movieListFragment_to_detailsfragment"
-            app:destination="@id/detailsfragment" />
+            android:id="@+id/action_movieListFragment_to_detailsfragment2"
+            app:destination="@id/detailsfragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/detailsfragment"
         android:name="com.example.viewmodel.Detailsfragment"
-        android:label="fragment_detailsfragment"
+        android:label="Details"
         tools:layout="@layout/fragment_detailsfragment" />
 </navigation>
